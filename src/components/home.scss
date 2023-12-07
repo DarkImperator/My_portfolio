@@ -1,0 +1,135 @@
+@import "../variables";
+
+/* Styles pour le conteneur principal */
+.container {
+  /* Styles pour la section "dino" */
+  background-color: $blueDeep-color;
+  
+  .dino {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 50px;
+    
+    /* Styles pour l'image à l'intérieur de la section "dino" */
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background-color: $blueLight-color;
+      mask-image: linear-gradient(#232222 70%, transparent 100%);
+      -webkit-mask-image: linear-gradient(#232222 70%, transparent 100%);
+    }
+  }
+  
+  /* Styles pour le conteneur du prénom */
+  .prenomContainer {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    z-index: 2;
+    top: 0;
+    // left: 0;
+
+    .denisC {
+      display: flex;
+      justify-content: center;
+      color: $fontColor;
+      font-size: $font-size-main;
+      margin-left: 25px;
+    }
+    
+    /* Styles pour le conteneur du métier */
+    .metierContainer {
+      // display: flex;
+      // justify-content: center;
+      margin: 10px 0 100px 40px;
+      
+      /* Styles pour le deuxième span dans le conteneur du métier */
+      #span2 {
+        color: $fontColor;
+        font-size: $font-size-main-2;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.2em;
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Animation pour le texte du métier */
+      #span2::after {
+        content: "Full-Stack";
+        display: inline-block;
+        animation: animation 12s steps(9) infinite;
+        width: 0ch;
+        white-space: nowrap;
+        color: $yellow-color;
+      }
+    }
+  }
+}
+
+/* Animation pour le texte du métier */
+@keyframes animation {
+  15% {
+    content: "Full-Stack";
+    width: 9ch;
+  }
+  30% {
+    width: 0ch;
+  }
+  50% {
+    content: "Front-End";
+    width: 9.5ch;
+  }
+  60% {
+    width: 0ch;
+  }
+  75% {
+    content: "Back-End";
+    width: 9.5ch;
+  }
+  90% {
+    width: 0ch;
+  }
+}
+
+
+/* Styles pour les écrans de petite taille */
+@media screen and (max-width: 780px) {
+  /* Styles pour le conteneur du prénom pour les petits écrans */
+  .container .prenomContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    /* Styles pour la partie "denisC" pour les petits écrans */
+    .denisC {
+      // align-items: flex-end;     
+      margin-left: 7px;
+
+      .span1 {
+        font-size: $font-size-Resp-title;
+        color: $fontColor;
+        line-height: 50px;
+
+        span{
+          margin-left: 7px;
+        }
+      }
+    }
+
+    /* Styles pour le conteneur du métier pour les petits écrans */
+    .metierContainer {
+      margin: 20px 0 50px 10px;
+
+      #span2 {
+        font-size: $font-size-Resp-main;
+      }
+    }
+  }
+}
