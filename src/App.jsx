@@ -3,6 +3,7 @@ import './App.scss'
 // import Navbar from './components/Navbar'
 import Home from './components/home'
 import Presentation from './components/presentation'
+import Skills from './components/skills'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
         {/* <Navbar /> */}
         <Home />
         <Presentation />
+        <Skills />
       </div>
     </>
   )

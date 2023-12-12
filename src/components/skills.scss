@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300;400;500&display=swap');
+@import "../variables";
+
+/* Styles pour le conteneur des cartes */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: yellow;
+
+}
+
+/* Styles pour les cartes */
+.cards {
+  background-color: red;
+}
+
+/* Styles pour les écrans de petite taille */
+@media screen and (max-width: 780px) {}
