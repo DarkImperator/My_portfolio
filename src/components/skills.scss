@@ -4,15 +4,144 @@
 /* Styles pour le conteneur des cartes */
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  background-color: yellow;
+  background-color: $blueDeep-color;
+  // background-color: yellow;
 
+  &.expanded {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #titleH1 {
+    font-size: $font-size-titreParag;
+  }
 }
 
 /* Styles pour les cartes */
 .cards {
-  background-color: red;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  color: $fontColor;
+  // background-color: red;
+
+  .imgExperience {
+    display: flex;
+    justify-content: center;
+    
+    img {
+      width: 40%;
+      cursor: pointer;
+      transition: ease-in 0.3s;
+      margin: 10px;
+
+      &:hover {
+        transform: scale(1.1);
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transition: ease-out 0.3s;
+      }
+    }
+  }
+}
+
+.expanded {
+  flex-direction: column-reverse;
+  color: $yellow-color;
+  margin-left: 5%;
+  transition: ease-out 0.3s;
+}
+
+.additionalContent {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 40%;
+  padding: 10px;
+  margin-top: 10px;
+  transition: ease-out 0.3s;
+  
+  .experienceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 30px;
+    background-color: $yellow-color;
+    color: black;
+    padding: 10px;
+    
+    span {
+      font-size: $font-size-main;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    p {
+      font-size: calc($font-size-main/1.6);
+      margin: 0 0 10px 10px;
+    }
+  }
+
+  .logoMajorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $yellow-color;
+    border-radius: 30px;
+    color: black;
+
+    .titleContainerExperience {
+      text-align: center;
+      margin: 20px;
+    }
+
+    img {
+      width: 125px;
+      height: auto;
+    }
+
+    .logoContainer {
+      display: flex;
+      flex-direction: row;
+
+      .divLeft {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .logo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 10px;
+          font-size: calc($font-size-main/1.6);
+        }
+      }
+  
+      .divRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .logo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 10px;
+          font-size: calc($font-size-main/1.6);
+        }
+      }
+    }
+  }
 }
 
 /* Styles pour les écrans de petite taille */

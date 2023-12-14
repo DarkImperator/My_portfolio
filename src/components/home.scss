@@ -39,7 +39,7 @@
       display: flex;
       justify-content: center;
       color: $fontColor;
-      font-size: $font-size-main;
+      font-size: $font-size-title;
       margin-left: 25px;
     }
     
@@ -52,7 +52,7 @@
       /* Styles pour le deuxième span dans le conteneur du métier */
       #span2 {
         color: $fontColor;
-        font-size: $font-size-main-2;
+        font-size: $font-size-soutitre;
         font-style: normal;
         font-weight: 300;
         line-height: 1.2em;

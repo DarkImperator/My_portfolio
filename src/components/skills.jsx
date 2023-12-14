@@ -38,11 +38,11 @@ const Skills = () => {
         className={`cards ${expandedCard === 1 ? "expanded" : ""}`}
         onClick={() => handleExpand(1)}
       >
-        <div className="titleExperience">
-          <h1 id="titleExperience">EXPÉRIENCE</h1>
+        <div>
+          <h1 id="titleH1">EXPÉRIENCE</h1>
         </div>
         <div className="imgExperience">
-          <img src={Experience} alt="" />
+          <img src={Experience} alt="image experience" />
         </div>
         {expandedCard === 1 && (
           <div className="additionalContent">
@@ -67,11 +67,11 @@ const Skills = () => {
         className={`cards ${expandedCard === 2 ? "expanded" : ""}`}
         onClick={() => handleExpand(2)}
       >
-        <div className="titleExperience">
-          <h1 id="titleExperience">FORMATIONS</h1>
+        <div>
+          <h1 id="titleH1">FORMATIONS</h1>
         </div>
         <div className="imgExperience">
-          <img src={Formation} alt="" />
+          <img src={Formation} alt="image formation" />
         </div>
         {expandedCard === 2 && (
           <div className="additionalContent">
@@ -86,9 +86,11 @@ const Skills = () => {
               </div>
               <div>
                 <span>Licence géologie - 2011</span>
+                <p></p>
               </div>
               <div>
                 <span>Bac Option Scientifique - 2007</span>
+                <p></p>
               </div>
             </div>
           </div>
@@ -98,11 +100,11 @@ const Skills = () => {
         className={`cards ${expandedCard === 3 ? "expanded" : ""}`}
         onClick={() => handleExpand(3)}
       >
-        <div className="titleExperience">
-          <h1 id="titleExperience">COMPÉTENCES</h1>
+        <div>
+          <h1 id="titleH1">COMPÉTENCES</h1>
         </div>
         <div className="imgExperience">
-          <img src={Competences} alt="" />
+          <img src={Competences} alt="image competences" />
         </div>
         {expandedCard === 3 && (
           <div className="additionalContent">
@@ -112,34 +114,46 @@ const Skills = () => {
               </div>
               <div className="logoContainer">
                 <div className="divLeft">
-                  <img src={HTML} alt="logo HTML" />
-                  <span>HTML</span>
-                  <img src={CSS} alt="logo CSS" />
-                  <span>CSS</span>
-                  <img src={JS} alt="logo JS" />
-                  <span>JavaScript</span>
-                  <img src={Node} alt="logo Node" />
-                  <span>Node</span>
-                  <img src={React} alt="logo React" />
-                  <span>React</span>
-                  <img src={Express} alt="logo Express" />
-                  <span>Express</span>
-                  <img src={SQL} alt="logo SQL" />
-                  <span>Sql</span>
-                  <img src={MySWork} alt="logo MySQLWorkbench" />
-                  <span>MySQLWorkbench</span>
+                  <div className="logo">
+                    <img src={HTML} alt="logo HTML" />
+                    <span>HTML</span>
+                    <img src={CSS} alt="logo CSS" />
+                    <span>CSS</span>
+                    <img src={JS} alt="logo JS" />
+                    <span>JavaScript</span>
+                  </div>
+                  <div className="logo">
+                    <img src={React} alt="logo React" />
+                    <span>React</span>
+                    <img src={Node} alt="logo Node" />
+                    <span>Node</span>
+                    <img src={Express} alt="logo Express" />
+                    <span>Express</span>
+                  </div >
+                  <div className="logo">
+                    <img src={SQL} alt="logo SQL" />
+                    <span>Sql</span>
+                    <img src={MySWork} alt="logo MySQLWorkbench" />
+                    <span>MySQLWorkbench</span>
+                  </div >
                 </div>
                 <div className="divRight">
-                  <img src={VSkod} alt="logo VSCode" />
-                  <span>Vs Code</span>
-                  <img src={Postman} alt="logo Postman" />
-                  <span>Postman</span>
-                  <img src={Figma} alt="logo Figma" />
-                  <span>Figma</span>
-                  <img src={Trello} alt="logo Trello" />
-                  <span>Trello</span>
-                  <img src={GitHub} alt="logo GitHub" />
-                  <span>GitHub</span>
+                  <div className="logo">
+                    <img src={GitHub} alt="logo GitHub" />
+                    <span>GitHub</span>
+                    <img src={VSkod} alt="logo VSCode" />
+                    <span>Vs Code</span>
+                  </div>
+                  <div className="logo">
+                    <img src={Figma} alt="logo Figma" />
+                    <span>Figma</span>
+                    <img src={Trello} alt="logo Trello" />
+                    <span>Trello</span>
+                  </div>
+                  <div className="logo">
+                    <img src={Postman} alt="logo Postman" />
+                    <span>Postman</span>
+                  </div>
                 </div>
               </div>
             </div>
