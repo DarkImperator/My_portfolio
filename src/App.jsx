@@ -4,6 +4,7 @@ import './App.scss'
 import Home from './components/home'
 import Presentation from './components/presentation'
 import Skills from './components/skills'
+import SkillsResp from './components/skillsResp'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
         <Home />
         <Presentation />
         <Skills />
+        <SkillsResp />
       </div>
     </>
   )
