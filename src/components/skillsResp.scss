@@ -4,56 +4,116 @@
 .generalContainerCarousel {
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  // margin-top: 50px;
+  
   .insideContainerCarousel {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: $yellow-color;
-
+    width: 95%;
+    
     .imgCarouselContainer {
-      width: 50%;
-      height: auto;
-      background-color: aqua;
       margin: 15px 0;
-
+      
       h1 {
-        margin-top: 15px;
+        margin-top: 10px;
+        color: $fontColor;
       }
     }
-
+    
     .contentCarouselContainer {
       display: flex;
       flex-direction: column;
       padding: 15px;
-      // background-color: green;
-
+      border-radius: 30px;
+      background-color: $yellow-color;
+      transition: ease-out 0.3s;
+      
       span {
         font-size: $font-size-Resp-text-big;
-        // color: red;
+        font-weight: bold;
       }
 
       p {
         font-size: $font-size-Resp-text-small;
-        // color: blue;
         margin-bottom: 20px;
+      }
+
+      strong:nth-child(3){
+        color: red;
       }
     }
 
     .logoMajorContainerCarousel {
-      background-color: yellow;
+      display: flex;
+      flex-direction: column;
+      background-color: $yellow-color;
+      border-radius: 30px;
+      margin-bottom: 5px;
 
-      .titleContainerExperienceCarousel {
-        
-      }
+        h1 {
+          margin: 15px;
+        }
 
-      img {
-        width: 50%;
-        height: auto;
+      .logoContainerCarousel {
+                
+        .logos {
+          display: flex;
+          justify-content: center;          
+          align-items: center;
+          margin: 5px;
+
+          img {
+            width: 80%;
+            height: auto;
+          }
+
+          .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;
+            
+            span {
+              margin: 10px;
+            }
+          }
+        }
       }
     }
   }
+}
+
+/* Styles pour la racine du carousel */
+.carousel-root {
+  outline: none;
+}
+
+/* Styles pour les images des diapositives du carousel */
+.carousel .slide img {
+  width: 40%;
+  vertical-align: top;
+  border: 0;
+}
+
+/* Styles pour les points de contrôle du carousel */
+.carousel .control-dots {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+/* Styles pour le statut du carousel */
+.carousel .carousel-status {
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  font-size: $font-size-Resp-little;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.9);
+  color: $yellow-color;
 }

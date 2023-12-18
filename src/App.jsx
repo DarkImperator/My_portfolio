@@ -1,4 +1,6 @@
 import './App.scss'
+import "./index.scss";
+import { useMediaQuery } from "react-responsive";
 
 // import Navbar from './components/Navbar'
 import Home from './components/home'
@@ -7,6 +9,7 @@ import Skills from './components/skills'
 import SkillsResp from './components/skillsResp'
 
 function App() {
+  const isMobile = useMediaQuery({ maxWidth: 780 });
   
   return (
     <>
@@ -14,8 +17,11 @@ function App() {
         {/* <Navbar /> */}
         <Home />
         <Presentation />
-        <Skills />
-        <SkillsResp />
+        {/* <Skills />
+        <SkillsResp /> */}
+        <div>
+          {isMobile ? <SkillsResp /> : <Skills />}
+        </div>
       </div>
     </>
   )

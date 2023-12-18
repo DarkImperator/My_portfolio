@@ -5,11 +5,12 @@
 .container_pres {
   box-sizing: border-box;
   width: 100vw;
-  height: 70vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $blueDeep-color;
+  margin-bottom: 50px;
   
   /* Style pour la section de la photo ("photo_pres") */
   .photo_pres {
@@ -47,7 +48,7 @@
   .container_pres {
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    height: auto;
 
     .photo_pres {
       width: 100%;

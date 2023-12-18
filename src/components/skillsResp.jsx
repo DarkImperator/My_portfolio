@@ -14,7 +14,7 @@ import React from "../assets/img/1_React.png";
 import SQL from "../assets/img/1_Sql.png";
 import Figma from "../assets/img/2_figma.png";
 import GitHub from "../assets/img/2_GitHub.png";
-import MySWork from "../assets/img/2_MySQLWorkbench.png";
+import MySWork from "../assets/img/2_MySQLWorkbench - bis.png";
 import Postman from "../assets/img/2_postman.png";
 import Trello from "../assets/img/2_trello.png";
 import VSkod from "../assets/img/2_vsCode.png";
@@ -43,7 +43,8 @@ const skillsResp = () => {
                 <br />
                 HTML, CSS, JavaScript, DOM, React, Express (NodeJS), SQL, Méthode agile
               </p>
-                <strong>Certification obtenue en décembre 2023</strong>
+              <strong>Certification obtenue en décembre 2023</strong>
+              <p></p>
             </div>
             <div>
               <span>Licence géologie - 2011</span>
@@ -93,27 +94,43 @@ const skillsResp = () => {
               <h1>Languages / Frameworks</h1>
             </div>
             <div className="logoContainerCarousel">
-              <div className="logo">
-                <img src={HTML} alt="logo HTML" />
-                <span>HTML</span>
-                <img src={CSS} alt="logo CSS" />
-                <span>CSS</span>
+              <div className="logos">
+                <div className="logo">
+                  <img src={HTML} alt="logo HTML" />
+                  <span>HTML</span>
+                </div>                
+                <div className="logo">
+                  <img src={CSS} alt="logo CSS" />
+                  <span>CSS</span>
+                </div>
+                <div className="logo">
                 <img src={JS} alt="logo JS" />
                 <span>JavaScript</span>
+                </div>
               </div>
-              <div className="logo">
-                <img src={React} alt="logo React" />
-                <span>React</span>
-                <img src={Node} alt="logo Node" />
-                <span>Node</span>
-                <img src={Express} alt="logo Express" />
-                <span>Express</span>
+              <div className="logos">
+                <div className="logo">
+                  <img src={React} alt="logo React" />
+                  <span>React</span>
+                </div>
+                <div className="logo">
+                  <img src={Node} alt="logo Node" />
+                  <span>Node</span>
+                </div>
+                <div className="logo">
+                  <img src={Express} alt="logo Express" />
+                  <span>Express</span>
+                </div>
               </div>
-              <div className="logo">
-                <img src={SQL} alt="logo SQL" />
-                <span>SQL</span>
-                <img src={MySWork} alt="logo MySQLWorkbench" />
-                <span>MySQLWorkbench</span>
+              <div className="logos">
+                <div className="logo">
+                  <img src={SQL} alt="logo SQL" />
+                  <span>SQL</span>
+                </div>
+                <div className="logo">
+                  <img src={MySWork} alt="logo MySQLWorkbench" />
+                  <span>MySQLWorkbench</span>
+                </div>
               </div>
             </div>
           </div>
@@ -122,21 +139,31 @@ const skillsResp = () => {
               <h1>Logiciels et outils</h1>
             </div>
             <div className="logoContainerCarousel">
-              <div className="logo">
-                <img src={GitHub} alt="logo GitHub" />
-                <span>GitHub</span>
-                <img src={VSkod} alt="logo VSCode" />
-                <span>Visual Studio Code</span>
+              <div className="logos">
+                <div className="logo">
+                  <img src={GitHub} alt="logo GitHub" />
+                  <span>GitHub</span>
+                </div>
+                <div className="logo">
+                  <img src={VSkod} alt="logo VSCode" />
+                  <span>Visual Studio Code</span>
+                </div>
               </div>
-              <div className="logo">
-                <img src={Figma} alt="Figma" />
-                <span>Figma</span>
-                <img src={Trello} alt="Trello" />
-                <span>Trello</span>
+              <div className="logos">
+                <div className="logo">
+                  <img src={Figma} alt="Figma" />
+                  <span>Figma</span>
+                </div>
+                <div className="logo">
+                  <img src={Trello} alt="Trello" />
+                  <span>Trello</span>
+                </div>
               </div>
-              <div className="logo">
-                <img src={Postman} alt="Postman" />
-                <span>Postman</span>
+              <div className="logos">
+                <div className="logo">
+                  <img src={Postman} alt="Postman" />
+                  <span>Postman</span>
+                </div>
               </div>
             </div>
           </div>
