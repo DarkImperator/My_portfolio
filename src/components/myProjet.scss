@@ -1,0 +1,69 @@
+@import "../variables";
+
+.globalContainer {
+  display: flex;
+  flex-direction: column;  
+  
+  .titleProject {
+    color: $fontColor;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 3vh;
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30vw;
+      height: auto;
+      border-radius: 30px;
+      border: 3px solid $yellow-color;
+      background-color: $blueLight-color;
+      margin: 3vh;
+      padding: 15px;
+      
+      p {
+        color: $fontColor;
+        font-size: $font-size-Resp-text-small_1;
+      }
+    }
+  }
+}
+
+
+/* Styles pour les écrans de petite taille */
+@media screen and (max-width: 780px) {
+  .globalContainer {
+    
+    .titleProject {
+      margin-bottom: 1vh;
+    }
+    
+    .projectsContainer {
+      flex-flow: column nowrap;
+      align-items: center;
+      margin-bottom: 3vh;
+      
+      .card {
+        width: 90vw;
+        border-radius: 20px;
+        border: 2px solid $yellow-color;
+        background-color: $blueLight-color;
+        margin: 3vh;
+        padding: 10px;
+        
+        p {
+          color: $fontColor;
+          font-size: $font-size-Resp-text-small;
+        }
+      }
+    }
+  }
+}

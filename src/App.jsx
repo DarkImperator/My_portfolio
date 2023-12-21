@@ -7,6 +7,7 @@ import Home from './components/home'
 import Presentation from './components/presentation'
 import Skills from './components/skills'
 import SkillsResp from './components/skillsResp'
+import MyProjet from './components/myProjet';
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 780 });
@@ -22,6 +23,7 @@ function App() {
         <div>
           {isMobile ? <SkillsResp /> : <Skills />}
         </div>
+        <MyProjet />
       </div>
     </>
   )
