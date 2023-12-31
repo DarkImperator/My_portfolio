@@ -2,7 +2,7 @@
 @import "../variables";
 
 /* Styles pour le conteneur des cartes */
-.container {
+.globalContainerSkills {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +20,8 @@
   }
 }
 
-/* Styles pour les cartes */
-.cards {
+/* Styles pour les cartes partie fixe */
+.cardsSkills {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -29,6 +29,13 @@
   margin: 20px;
   padding: 20px;
   color: $fontColor;
+
+  &.expanded {
+    flex-direction: column-reverse;
+    color: $yellow-color;
+    margin-left: 5%;
+    transition: ease-out 0.3s;
+  }
 
   .imgExperience {
     display: flex;
@@ -50,14 +57,8 @@
   }
 }
 
-.expanded {
-  flex-direction: column-reverse;
-  color: $yellow-color;
-  margin-left: 5%;
-  transition: ease-out 0.3s;
-}
-
-.additionalContent {
+/* Styles pour les cartes partie "expanded" */
+.expandedContent {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -68,10 +69,6 @@
   margin-top: 10px;
   transition: ease-out 0.3s;
 
-  // &additionalContent:nth-child(2) {
-  //   background-color: aqua;
-  // }
-  
   .experienceContainer {
     display: flex;
     flex-direction: column;
@@ -94,14 +91,15 @@
     }
   }
 
-  .logoMajorContainer {
+/* Styles pour les cartes partie "expanded" de la carte "competence" */
+  .logoExperienceContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: $yellow-color;
     border-radius: 30px;
     color: black;
-
+    
     .titleContainerExperience {
       text-align: center;
       margin: 20px;

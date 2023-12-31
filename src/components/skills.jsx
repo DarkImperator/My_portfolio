@@ -16,7 +16,6 @@ import MySWork from "../assets/img/2_MySQLWorkbench.png";
 import Postman from "../assets/img/2_postman.png";
 import Trello from "../assets/img/2_trello.png";
 import VSkod from "../assets/img/2_vsCode.png";
-// import __ from "../assets/img/__.png";
 
 const Skills = () => {
   const [expandedCard, setExpandedCard] = useState(null);
@@ -33,9 +32,9 @@ const Skills = () => {
   };
 
   return (
-    <section className={`container ${containerExpanded ? "expanded" : ""}`}>
+    <section className={`globalContainerSkills ${containerExpanded ? "expanded" : ""}`}>
       <div
-        className={`cards ${expandedCard === 1 ? "expanded" : ""}`}
+        className={`cardsSkills ${expandedCard === 1 ? "expanded" : ""}`}
         onClick={() => handleExpand(1)}
       >
         <div>
@@ -45,7 +44,7 @@ const Skills = () => {
           <img src={Experience} alt="image experience" />
         </div>
         {expandedCard === 1 && (
-          <div className="additionalContent">
+          <div className="expandedContent">
             <div className="experienceContainer">
               <div>
                 <span>Opérateur Traitement Polyvalent</span>
@@ -64,7 +63,7 @@ const Skills = () => {
         )}
       </div>
       <div
-        className={`cards ${expandedCard === 2 ? "expanded" : ""}`}
+        className={`cardsSkills ${expandedCard === 2 ? "expanded" : ""}`}
         onClick={() => handleExpand(2)}
       >
         <div>
@@ -74,7 +73,7 @@ const Skills = () => {
           <img src={Formation} alt="image formation" />
         </div>
         {expandedCard === 2 && (
-          <div className="additionalContent">
+          <div className="expandedContent">
             <div className="experienceContainer">
               <div>
                 <span>Wild Code School - Mai 2023 à Octobre 2023</span>
@@ -97,7 +96,7 @@ const Skills = () => {
         )}
       </div>
       <div
-        className={`cards ${expandedCard === 3 ? "expanded" : ""}`}
+        className={`cardsSkills ${expandedCard === 3 ? "expanded" : ""}`}
         onClick={() => handleExpand(3)}
       >
         <div>
@@ -107,8 +106,8 @@ const Skills = () => {
           <img src={Competences} alt="image competences" />
         </div>
         {expandedCard === 3 && (
-          <div className="additionalContent">
-            <div className="logoMajorContainer">
+          <div className="expandedContent">
+            <div className="logoExperienceContainer">
               <div className="titleContainerExperience">
                 <h2>Languages / Frameworks & Logiciels et outils</h2>
               </div>

@@ -1,22 +1,26 @@
 @import "../variables";
 
-.globalContainer {
+/* Styles pour le conteneur principal */
+.globalContainerProjects {
   display: flex;
   flex-direction: column;  
   
+  /* Styles pour le titre du projet */
   .titleProject {
     color: $fontColor;
     text-align: center;
     margin-bottom: 2vh;
   }
   
+  /* Styles pour le conteneur des projets */
   .projectsContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     margin-bottom: 3vh;
     
-    .card {
+    /* Styles pour le conteneur d'un projet */
+    .cardProject {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -40,7 +44,7 @@
 
 /* Styles pour les écrans de petite taille */
 @media screen and (max-width: 780px) {
-  .globalContainer {
+  .globalContainerProjects {
     
     .titleProject {
       margin-bottom: 1vh;
@@ -51,7 +55,7 @@
       align-items: center;
       margin-bottom: 3vh;
       
-      .card {
+      .cardProject {
         width: 90vw;
         border-radius: 20px;
         border: 2px solid $yellow-color;

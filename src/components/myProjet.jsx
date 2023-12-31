@@ -7,6 +7,7 @@ import starLov from "../assets/img/starLove.png";
 import labo from "../assets/img/leLabo.png";
 
 const MyProjet = () => {
+  /* Variables pour stocker l'etat d'expansion des différents projets */
   const [isScripterExpand, setIsScripterExpand] = useState(false);
   const [isBttPExpand, setIsBttPExpand] = useState(false);
   const [isMonkeeExpand, setIsMonkeeExpand] = useState(false);
@@ -34,12 +35,12 @@ const MyProjet = () => {
   };
 
   return (
-    <div className="globalContainer">
+    <div className="globalContainerProjects">
       <div className="titleProject">
         <h1>Mes réalisations</h1>
       </div>
       <div className="projectsContainer">
-        <div className={`card ${isScripterExpand ? "cardExpand" : "hiddenCard"}`} onClick={handleScripterClick}>
+        <div className="cardProject" onClick={handleScripterClick}>
         <div>
             <img src={scripter} alt="logo scripter" />
           </div>
@@ -62,7 +63,7 @@ const MyProjet = () => {
             ""
           )}
         </div>
-        <div className={`card ${isMonkeeExpand ? "cardExpand" : "hiddenCard"}`} onClick={handleMonkeeClick}>
+        <div className="cardProject" onClick={handleMonkeeClick}>
         <div>
             <img src={monkee} alt="logo monkee" />
           </div>
@@ -84,7 +85,7 @@ const MyProjet = () => {
             ""
           )}
         </div>
-        <div className={`card ${isLeLaboExpand ? "cardExpand" : "hiddenCard"}`} onClick={handleLeLaboClick}>
+        <div className="cardProject" onClick={handleLeLaboClick}>
         <div>
             <img src={labo} alt="logo labo" />
           </div>
@@ -106,7 +107,7 @@ const MyProjet = () => {
             ""
           )}
         </div>
-        <div className={`card ${isBttPExpand ? "cardExpand" : "hiddenCard"}`} onClick={handleBttPClick}>
+        <div className="cardProject" onClick={handleBttPClick}>
         <div>
             <img src={BttP} alt="logo BttP" />
           </div>
@@ -128,7 +129,7 @@ const MyProjet = () => {
             ""
           )}
         </div>
-        <div className={`card ${isStarLoveExpand ? "cardExpand" : "hiddenCard"}`} onClick={handleStarLoveClick}>
+        <div className="cardProject" onClick={handleStarLoveClick}>
         <div>
             <img src={starLov} alt="logo starLove" />
           </div>
