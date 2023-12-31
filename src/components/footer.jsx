@@ -1,14 +1,14 @@
-import gitHub from "../assets/img/2_GitHub_blue.png";
+// import gitHub from "../assets/img/2_GitHub_blue.png";
 import gitHub_1 from "../assets/img/2_GitHub.png";
 import linkedIn from "../assets/img/LinkedIn_icon.png";
-import oldTelBl from "../assets/img/logo_old_tel-bl.png";
+// import oldTelBl from "../assets/img/logo_old_tel-bl.png";
 import oldTelWh from "../assets/img/logo_old_tel-wh.png";
 import mail from "../assets/img/parchemin.png";
 
 const footer = () => {
   return (
     <>
-    <div className="footerGlobalContainer">
+    <div className="globalContainerFooter">
       <div className="divLeft">
         {/* Lien vers Telephone */}
         <a href="tel:+33676036608" target="_blank" rel="noopener noreferrer">

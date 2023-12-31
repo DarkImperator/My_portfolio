@@ -29,13 +29,13 @@ const skillsResp = () => {
       selectedItem={0}
     >
       {/* Diapositive 1 */}
-      <div className="generalContainerCarousel">
+      <div className="globalContainerCarousel">
         <div className="insideContainerCarousel">
-          <div className="imgCarouselContainer">
-            <img id="imgCarousel" src={Formation} alt="Formation" />
+          <div className="imgTitleCarousel">
+            <img src={Formation} alt="Formation" />
             <h1>FORMATIONS</h1>
           </div>
-          <div className="contentCarouselContainer">
+          <div className="contentCarousel">
             <div>
               <span>Wild Code School - Mai 2023 à Octobre 2023</span>
               <p>
@@ -59,13 +59,13 @@ const skillsResp = () => {
       </div>
 
       {/* Diapositive 2 */}
-      <div className="generalContainerCarousel">
+      <div className="globalContainerCarousel">
         <div className="insideContainerCarousel">
-          <div className="imgCarouselContainer">
-            <img id="imgCarousel" src={Experience} alt="Expérience" />
+          <div className="imgTitleCarousel">
+            <img src={Experience} alt="Expérience" />
             <h1>EXPÉRIENCE</h1>
           </div>
-          <div className="contentCarouselContainer">
+          <div className="contentCarousel">
             <div>
               <span>Opérateur Traitement Polyvalent</span>
               <p>CA-Chèques (Aout 2018 - Septembre 2022)</p>
@@ -83,17 +83,17 @@ const skillsResp = () => {
       </div>
 
       {/* Diapositive 3 */}
-      <div className="generalContainerCarousel">
+      <div className="globalContainerCarousel">
         <div className="insideContainerCarousel">
-          <div className="imgCarouselContainer">
-            <img id="imgCarousel" src={Competences} alt="Compétences" />
+          <div className="imgTitleCarousel">
+            <img src={Competences} alt="Compétences" />
             <h1>COMPÉTENCES</h1>
           </div>
-          <div className="logoMajorContainerCarousel">
+          <div className="logoCompetenceCarousel">
             <div className="titleContainerExperienceCarousel">
               <h1>Languages / Frameworks</h1>
             </div>
-            <div className="logoContainerCarousel">
+            <div className="logosCarousel">
               <div className="logos">
                 <div className="logo">
                   <img src={HTML} alt="logo HTML" />
@@ -134,11 +134,11 @@ const skillsResp = () => {
               </div>
             </div>
           </div>
-          <div className="logoMajorContainerCarousel">
+          <div className="logoCompetenceCarousel">
             <div className="titleContainerExperienceCarousel">
               <h1>Logiciels et outils</h1>
             </div>
-            <div className="logoContainerCarousel">
+            <div className="logosCarousel">
               <div className="logos">
                 <div className="logo">
                   <img src={GitHub} alt="logo GitHub" />

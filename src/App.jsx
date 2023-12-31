@@ -19,8 +19,6 @@ function App() {
         {/* <Navbar /> */}
         <Home />
         <Presentation />
-        {/* <Skills />
-        <SkillsResp /> */}
         <div>
           {isMobile ? <SkillsResp /> : <Skills />}
         </div>

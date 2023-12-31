@@ -2,7 +2,7 @@ import dca from "../assets/img/DC_ph.jpg"
 
 const presentation = () => {
   return (
-    <div className="container_pres">
+    <div className="globalContainerPresentation">
       <div className="photo_pres">
         <img src={dca} alt="photo du developpeur" />
       </div>

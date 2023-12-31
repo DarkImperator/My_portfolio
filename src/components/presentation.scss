@@ -2,7 +2,7 @@
 @import "../variables";
 
 /* Style pour le contenant principal */
-.container_pres {
+.globalContainerPresentation {
   box-sizing: border-box;
   width: 100vw;
   height: auto;
@@ -45,7 +45,7 @@
 
 /* Styles pour les écrans de petite taille */
 @media screen and (max-width: 780px) {
-  .container_pres {
+  .globalContainerPresentation {
     flex-direction: column;
     justify-content: space-around;
     height: auto;
