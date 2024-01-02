@@ -47,7 +47,7 @@ const skillsResp = () => {
               <p></p>
             </div>
             <div>
-              <span>Licence géologie - 2011</span>
+              <span>Licence Géologie - 2011</span>
               <p></p>
             </div>
             <div>
@@ -71,11 +71,11 @@ const skillsResp = () => {
               <p>CA-Chèques (Aout 2018 - Septembre 2022)</p>
             </div>
             <div>
-              <span>Assistant d’éducation</span>
+              <span>Assistant d’Éducation</span>
               <p>Lycée La Martinière-Monplaisir (Janvier 2015 - Juillet 2018)</p>
             </div>
             <div>
-              <span>Technicien eau potable</span>
+              <span>Technicien Eau Potable</span>
               <p>Grand Lyon (Novembre 2011 - Décembre 2013)</p>
             </div>
           </div>
@@ -91,7 +91,7 @@ const skillsResp = () => {
           </div>
           <div className="logoCompetenceCarousel">
             <div className="titleContainerExperienceCarousel">
-              <h1>Languages / Frameworks</h1>
+              <h1>Langages / Frameworks</h1>
             </div>
             <div className="logosCarousel">
               <div className="logos">

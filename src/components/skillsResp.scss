@@ -27,7 +27,7 @@
       flex-direction: column;
       padding: 15px;
       border-radius: 30px;
-      background-color: $yellow-color;
+      background-color: $blueLight-color;
       transition: ease-out 0.3s;
       
       span {
@@ -41,14 +41,14 @@
       }
 
       strong:nth-child(3){
-        color: red;
+        color: $yellow-color;
       }
     }
 
     .logoCompetenceCarousel {
       display: flex;
       flex-direction: column;
-      background-color: $yellow-color;
+      background-color: $blueLight-color;
       border-radius: 30px;
       margin-bottom: 5px;
 
