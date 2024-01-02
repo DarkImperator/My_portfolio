@@ -51,11 +51,11 @@ const Skills = () => {
                 <p>CA-Chèques (Aout 2018 - Septembre 2022)</p>
               </div>
               <div>
-                <span>Assistant d’éducation</span>
+                <span>Assistant d’Éducation</span>
                 <p>Lycée La Martinière-Monplaisir (Janvier 2015 - Juillet 2018)</p>
               </div>
               <div>
-                <span>Technicien eau potable</span>
+                <span>Technicien Eau Potable</span>
                 <p>Grand Lyon (Novembre 2011 - Décembre 2013)</p>
               </div>
             </div>
@@ -80,11 +80,11 @@ const Skills = () => {
                 <p>
                   <strong>Formation développeur Web et Web mobile</strong>
                   <br />
-                  HTML, CSS, JavaScript, DOM, React, Express (NodeJS), SQL
+                  HTML, CSS, JavaScript, DOM, React, Express, NodeJS, SQL
                 </p>
               </div>
               <div>
-                <span>Licence géologie - 2011</span>
+                <span>Licence Géologie - 2011</span>
                 <p></p>
               </div>
               <div>
@@ -109,7 +109,7 @@ const Skills = () => {
           <div className="expandedContent">
             <div className="logoExperienceContainer">
               <div className="titleContainerExperience">
-                <h2>Languages / Frameworks & Logiciels et outils</h2>
+                <h2>Langages / Frameworks & Logiciels et outils</h2>
               </div>
               <div className="logoContainer">
                 <div className="divLeft">
